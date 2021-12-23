@@ -1,0 +1,12 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  display: blocks;
+  width: 750px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
