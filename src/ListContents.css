@@ -1,0 +1,27 @@
+div.content-info {
+  display: flex;
+  width: 97%;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+div.content-info div.content-image {
+  flex: 0 0 20%;
+}
+
+div.content-info div.content-image img {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+div.content-caption {
+  flex: 0 0 70%;
+}
+
+div.content-button {
+  flex: 0 0 10%;
+}

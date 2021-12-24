@@ -1,18 +1,30 @@
 import React from 'react';
-import user from './user.jpg';
+import './ListContents.css';
 
 export default function ListContents(props) {
   const contents = props.contents;
 
-  const listContents = content.map((content) => {
+  const listContents = contents.map((content) => {
     return (
-      <div className="content-info">
+      <div className="content-info" key={content.id}>
         <div className="content-image">
-          <img src={user} alt={content.name} />
+          <img
+            src="https://stackblitz.com/files/react-xkdrsa/github/Jawahar1994/react-xkdrsa/master/5907.jpg"
+            alt={content.name}
+          />
         </div>
         <div className="content-caption">
           <h3>{content.name}</h3>
           <p>{content.email}</p>
+        </div>
+        <div className="content-button">
+          <button
+            onClick={() => {
+              props.removeClickHandler(content.id);
+            }}
+          >
+            Delete
+          </button>
         </div>
       </div>
     );
