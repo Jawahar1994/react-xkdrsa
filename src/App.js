@@ -10,8 +10,6 @@ export default function App() {
     setContacts([...contents, content]);
   };
 
-  console.log(contents);
-
   return (
     <div className="content-wrapper">
       <AddListContent addContentHandler={addContentHandler} />
